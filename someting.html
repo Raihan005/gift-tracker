@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Christmas Gift Order Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <form id="giftForm">
+            <h1>HEY!<br>Tell Santa Your Wish...</h1>
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" required>
+            </div>
+
+            <div class="form-group">
+                <label for="item">Gift Item:</label>
+                <input type="text" id="item" required>
+            </div>
+
+            <button type="submit">Submit</button>
+        </form>
+        <div id="confirmationMessage" class="hidden">
+            <h2><span id="confirmName"></span>, We've Sent your Request to Santa!</h2>
+            <p>Santa will deliver your <strong><span id="confirmItem"></span></strong> Gift Soon!</p>
+            <button id="newOrderButton" onclick="newOrder()">New Order</button>
+        </div>
+    </div>
+
+    <button id="santaButton" onclick="alert('Login Page is under Construction')"></button>
+    <script src="script.js"></script>
+</body>
+</html>
